@@ -3,132 +3,262 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>OBSERV · Hidratare · MBS Care</title>
 
   <style>
-    * { box-sizing: border-box; }
+    * {
+      box-sizing: border-box;
+    }
 
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
+      font-family: Arial, Helvetica, sans-serif;
       background: #f7f6f2;
       color: #242424;
       line-height: 1.75;
     }
 
     .container {
+      width: 100%;
       max-width: 760px;
-      margin: auto;
+      margin: 0 auto;
       padding: 45px 20px 70px;
     }
 
     .eyebrow {
-      font-size: 14px;
-      color: #777;
       margin-bottom: 15px;
+      font-size: 14px;
+      letter-spacing: 0.5px;
+      color: #777;
     }
 
     h1 {
+      margin: 0 0 25px;
       font-size: 34px;
       line-height: 1.2;
+      letter-spacing: -0.4px;
     }
 
     h2 {
+      margin-top: 34px;
+      margin-bottom: 12px;
       font-size: 21px;
-      margin-top: 32px;
+      line-height: 1.35;
+    }
+
+    p {
+      margin: 0 0 16px;
+    }
+
+    .audio-box {
+      margin: 0 0 32px;
+      padding: 18px;
+      background: #ffffff;
+      border-radius: 16px;
+      box-shadow: 0 3px 14px rgba(0, 0, 0, 0.04);
+    }
+
+    .audio-label {
+      margin-bottom: 10px;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.7px;
+      color: #777;
     }
 
     audio {
+      display: block;
       width: 100%;
-      margin: 10px 0 30px;
+    }
+
+    ol,
+    ul {
+      padding-left: 24px;
+      margin-top: 12px;
+      margin-bottom: 25px;
     }
 
     li {
       margin-bottom: 10px;
+      padding-left: 3px;
+    }
+
+    .observation {
+      margin-top: 25px;
+      padding: 22px;
+      background: #ffffff;
+      border-radius: 16px;
+      box-shadow: 0 3px 14px rgba(0, 0, 0, 0.04);
+    }
+
+    .observation h2 {
+      margin-top: 0;
     }
 
     .next {
-      background: white;
-      padding: 20px;
+      margin-top: 40px;
+      padding: 22px;
+      background: #ffffff;
       border-radius: 16px;
-      margin-top: 35px;
+      box-shadow: 0 3px 14px rgba(0, 0, 0, 0.04);
     }
 
-    a {
-      color: inherit;
-      font-weight: bold;
+    .next strong {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .next a {
+      color: #242424;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .next a:hover {
+      text-decoration: underline;
+    }
+
+    .back {
+      margin-top: 35px;
+      text-align: center;
+    }
+
+    .back a {
+      font-size: 14px;
+      color: #777;
+      text-decoration: none;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 38px 18px 55px;
+      }
+
+      h1 {
+        font-size: 30px;
+      }
+
+      h2 {
+        font-size: 20px;
+      }
     }
   </style>
 </head>
 
 <body>
 
-<main class="container">
+  <main class="container">
 
-  <div class="eyebrow">MBS Care · Corp · Hidratare</div>
+    <div class="eyebrow">MBS Care · Corp · Hidratare</div>
 
-  <h1>🔎 Cum mă hidratez acum?</h1>
+    <h1>🔎 Cum mă hidratez acum?</h1>
 
-  <audio controls preload="metadata">
-    <source src="./hidratare2.MP3" type="audio/mpeg">
-    Browserul tău nu suportă redarea audio.
-  </audio>
+    <div class="audio-box">
+      <div class="audio-label">🎧 ASCULTĂ MATERIALUL</div>
 
-  <p>
-    Acum că ai înțeles rolul apei în organism, următorul pas este să observi
-    <strong>cum arată hidratarea ta în realitate</strong>.
-  </p>
+      <audio controls preload="metadata">
+        <source src="./hidratare2.mp3" type="audio/mpeg">
+        Browserul tău nu suportă redarea audio.
+      </audio>
+    </div>
 
-  <p>
-    Nu încerca încă să schimbi ceva. Pentru moment, doar observă.
-  </p>
+    <p>
+      Acum că ai înțeles rolul apei în organism, următorul pas este să observi
+      <strong>cum arată hidratarea ta în realitate</strong>.
+    </p>
 
-  <h2>Check-in hidratare</h2>
+    <p>
+      Nu încerca încă să schimbi ceva. Pentru moment, doar observă.
+    </p>
 
-  <p>Gândește-te la ultimele 7 zile:</p>
+    <h2>Check-in hidratare</h2>
 
-  <ol>
-    <li>Aproximativ câtă apă beau într-o zi?</li>
-    <li>Beau apă pe parcursul zilei sau mai ales în anumite momente?</li>
-    <li>Trec perioade lungi fără să beau nimic?</li>
-    <li>Observ când apare senzația de sete?</li>
-    <li>Ce beau cel mai des pe parcursul zilei?</li>
-    <li>Beau mai multă apă atunci când fac mișcare sau când este foarte cald?</li>
-    <li>Cum arată, de obicei, culoarea urinei mele?</li>
-    <li>Există zile în care beau mult mai puțin decât în altele?</li>
-    <li>Ce mă face să uit cel mai des să beau apă?</li>
-    <li>Ce alimente bogate în apă consum în mod obișnuit?</li>
-  </ol>
+    <p>
+      Gândește-te la ultimele 7 zile:
+    </p>
 
-  <h2>Observă timp de 7 zile</h2>
+    <ol>
+      <li>Aproximativ câtă apă beau într-o zi?</li>
 
-  <p>Urmărește câteva lucruri simple:</p>
+      <li>
+        Beau apă pe parcursul zilei sau mai ales în anumite momente?
+      </li>
 
-  <ul>
-    <li>aproximativ cât bei;</li>
-    <li>când bei;</li>
-    <li>când apare setea;</li>
-    <li>culoarea urinei;</li>
-    <li>activitatea fizică;</li>
-    <li>temperatura și transpirația;</li>
-    <li>diferențele dintre o zi și alta.</li>
-  </ul>
+      <li>
+        Trec perioade lungi fără să beau nimic?
+      </li>
 
-  <p>Nu este nevoie să urmărești fiecare mililitru.</p>
+      <li>
+        Observ când apare senzația de sete?
+      </li>
 
-  <p>
-    Scopul este să vezi mai clar <strong>cum răspunde aportul tău de lichide
-    nevoilor corpului și contextului în care te afli</strong>.
-  </p>
+      <li>
+        Ce beau cel mai des pe parcursul zilei?
+      </li>
 
-  <div class="next">
-    <strong>Următorul pas:</strong><br>
-    <a href="sustin.html">
-      SUSȚIN — Cum îmi construiesc o hidratare adecvată? →
-    </a>
-  </div>
+      <li>
+        Beau mai multă apă atunci când fac mișcare sau când este foarte cald?
+      </li>
 
-</main>
+      <li>
+        Cum arată, de obicei, culoarea urinei mele?
+      </li>
+
+      <li>
+        Există zile în care beau mult mai puțin decât în altele?
+      </li>
+
+      <li>
+        Ce mă face să uit cel mai des să beau apă?
+      </li>
+
+      <li>
+        Ce alimente bogate în apă consum în mod obișnuit?
+      </li>
+    </ol>
+
+    <div class="observation">
+
+      <h2>Observă timp de 7 zile</h2>
+
+      <p>
+        Urmărește câteva lucruri simple:
+      </p>
+
+      <ul>
+        <li>aproximativ cât bei;</li>
+        <li>când bei;</li>
+        <li>când apare setea;</li>
+        <li>culoarea urinei;</li>
+        <li>activitatea fizică;</li>
+        <li>temperatura și transpirația;</li>
+        <li>diferențele dintre o zi și alta.</li>
+      </ul>
+
+      <p>
+        Nu este nevoie să urmărești fiecare mililitru.
+      </p>
+
+      <p>
+        Scopul este să vezi mai clar
+        <strong>cum răspunde aportul tău de lichide nevoilor corpului și contextului în care te afli</strong>.
+      </p>
+
+    </div>
+
+    <div class="next">
+      <strong>Următorul pas:</strong>
+      <a href="./sustin.html">
+        SUSȚIN — Cum îmi construiesc o hidratare adecvată? →
+      </a>
+    </div>
+
+    <div class="back">
+      <a href="./index.html">← Înapoi la Hidratare</a>
+    </div>
+
+  </main>
 
 </body>
 </html>
