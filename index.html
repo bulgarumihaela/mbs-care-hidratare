@@ -4,15 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>MBS Care · Corp · Hidratare</title>
+  <title>Hidratare · MBS Care</title>
 
   <style>
     * {
       box-sizing: border-box;
-    }
-
-    html {
-      scroll-behavior: smooth;
     }
 
     body {
@@ -21,7 +17,6 @@
       background: #f7f6f2;
       color: #242424;
       line-height: 1.6;
-      -webkit-font-smoothing: antialiased;
     }
 
     .container {
@@ -46,39 +41,32 @@
     }
 
     .subtitle {
-      margin: 0 0 40px;
       max-width: 680px;
+      margin: 0 0 40px;
       font-size: 18px;
       line-height: 1.65;
       color: #555;
     }
 
-    .cards {
-      display: grid;
-      gap: 18px;
-    }
-
     .card {
       display: block;
-      padding: 25px;
+      margin-bottom: 18px;
+      padding: 24px;
       background: #ffffff;
-      border: 1px solid rgba(0, 0, 0, 0.04);
       border-radius: 18px;
       color: inherit;
       text-decoration: none;
       box-shadow: 0 4px 18px rgba(0, 0, 0, 0.05);
-      transition:
-        transform 0.2s ease,
-        box-shadow 0.2s ease;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
 
     .card:hover {
       transform: translateY(-2px);
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.07);
+      box-shadow: 0 7px 24px rgba(0, 0, 0, 0.07);
     }
 
     .step {
-      margin-bottom: 9px;
+      margin-bottom: 8px;
       font-size: 13px;
       font-weight: 700;
       letter-spacing: 1px;
@@ -92,7 +80,7 @@
     }
 
     .footer {
-      margin-top: 48px;
+      margin-top: 45px;
       text-align: center;
       font-size: 13px;
       color: #888;
@@ -104,7 +92,7 @@
       }
 
       h1 {
-        font-size: 33px;
+        font-size: 32px;
       }
 
       .subtitle {
@@ -112,7 +100,7 @@
       }
 
       .card {
-        padding: 22px;
+        padding: 21px;
       }
 
       .card h2 {
@@ -126,9 +114,7 @@
 
   <main class="container">
 
-    <div class="eyebrow">
-      MBS Care · Corp
-    </div>
+    <div class="eyebrow">MBS Care · Corp</div>
 
     <h1>HIDRATARE</h1>
 
@@ -137,24 +123,20 @@
       și construiește o hidratare care răspunde nevoilor corpului tău.
     </p>
 
-    <div class="cards">
+    <a class="card" href="./inteleg.html">
+      <div class="step">1 · ÎNȚELEG</div>
+      <h2>💧 De ce are corpul nevoie de apă?</h2>
+    </a>
 
-      <a class="card" href="./inteleg.html">
-        <div class="step">1 · ÎNȚELEG</div>
-        <h2>💧 De ce are corpul nevoie de apă?</h2>
-      </a>
+    <a class="card" href="./observ.html">
+      <div class="step">2 · OBSERV</div>
+      <h2>🔎 Cum mă hidratez acum?</h2>
+    </a>
 
-      <a class="card" href="./observ.html">
-        <div class="step">2 · OBSERV</div>
-        <h2>🔎 Cum mă hidratez acum?</h2>
-      </a>
-
-      <a class="card" href="./sustin.html">
-        <div class="step">3 · SUSȚIN</div>
-        <h2>💧 Cum îmi construiesc o hidratare adecvată?</h2>
-      </a>
-
-    </div>
+    <a class="card" href="./sustin.html">
+      <div class="step">3 · SUSȚIN</div>
+      <h2>💧 Cum îmi construiesc o hidratare adecvată?</h2>
+    </a>
 
     <div class="footer">
       MBS Care · Corp · Hidratare
